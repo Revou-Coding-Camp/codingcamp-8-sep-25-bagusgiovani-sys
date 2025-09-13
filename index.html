@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Bagus Giovani</title>
+
+  <!-- CSS External -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header p-[8px]">
+    <!-- Logo Website -->
+    <div class="logo-icon"></div>
+
+    <!-- Navbar Website -->
+    <nav>
+      <ul class="flex">
+        <li><a class="border p-[8px] rounded" href="#home">Home</a></li>
+        <li><a class="border p-[8px] rounded" href="#about">About Me</a></li>
+        <li><a class="border p-[8px] rounded" href="#vision">Vision & Mission</a></li>
+        <li><a class="border p-[8px] rounded" href="#profile">MyProfile</a></li>
+        <li><a class="border p-[8px] rounded" href="#portfolio">Portfolio</a></li>
+        <li><a class="border p-[8px] rounded" href="#message-us">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr />
+
+  <!-- Main Content -->
+  <main>
+    <!-- Home -->
+    <section id="home" class="min-h-screen flex items-center justify-center">
+      <h1 class="text-4xl font-bold">Welcome <span id="welcome-user">User</span>!</h1>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="min-h-screen flex items-center justify-center bg-white">
+      <div class="max-w-xl text-center">
+        <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+        <p>I am a Business Management graduate from Institut Teknologi Bandung (ITB) with international academic exposure (exchange programs in Taiwan & Malaysia). After 4 years of entrepreneurial experience running a coffee business, I transitioned into tech as a Coding Teacher at Kodecoon Academy (Singapore-based), where I teach HTML, CSS, JavaScript, and Python to young learners and guide students in competitions such as NRC Singapore and hack@CODE.</p>
+      </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section id="vision" class="min-h-screen flex items-center justify-center bg-gray-50">
+      <div class="max-w-xl text-center">
+        <h2 class="text-3xl font-semibold mb-4">Vision & Mission</h2>
+        <p><strong>Vision:</strong> To leverage my unique background in business, entrepreneurship, and coding education to become a globally competitive Frontend Engineer with strong potential in remote and freelance markets.</p>
+        <p><strong>Mission:</strong> Build impactful, user-friendly web applications using React & modern frontend tools.
+
+Continuously grow from teaching to hands-on development, bridging education and engineering.
+
+Pursue opportunities that combine creativity, problem-solving, and global collaboration, aiming for remote roles and long-term career scalability.</p>
+      </div>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile" class="min-h-screen flex items-center justify-center bg-gray-100">
+      <div class="max-w-xl text-center">
+        <h2 class="text-3xl font-semibold mb-4">My Profile</h2>
+        <p>Our team consists of passionate individuals with expertise in technology, design, and management. We work
+          together to deliver the best results for our clients.</p>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="min-h-screen flex items-center justify-center">
+      <div class="max-w-xl text-center">
+        <h2 class="text-3xl font-semibold mb-4">Portfolio</h2>
+        <p>Teaching Projects: Curriculum delivery in web development and Python through BSD Education platform.
+
+Upcoming Developer Portfolio: 2–3 live React projects (landing page, portfolio site, small app) deployed on Vercel/Netlify.
+
+GitHub presence: Clean, documented repositories showcasing real-world code.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="message-us" class="min-h-screen flex flex-col items-center justify-evenly bg-gray-100">
+      <h2 class="text-3xl font-semibold">Message Us</h2>
+
+      <form id="contact-form" class="mt-4 max-w-md w-full">
+        <div class="mb-4">
+          <label for="name" class="block mb-2">Name:</label>
+          <input type="text" id="name" name="name" class="border p-2 w-full">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block mb-2">Email:</label>
+          <input type="email" id="email" name="email" class="border p-2 w-full">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block mb-2">Message:</label>
+          <textarea id="message" name="message" class="border p-2 w-full" rows="4"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white p-2 rounded">Send Message</button>
+      </form>
+
+      <!-- Show form results here -->
+      <div id="form-output" class="mt-6 text-center"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="text-center p-[16px] bg-gray-200">
+      &copy; 2025 Bagus Giovani. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JS External -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
